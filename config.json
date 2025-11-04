@@ -1,0 +1,79 @@
+{
+  "battery": {
+    "name": "Test Battery 001",
+    "capacity_mah": 800,
+    "chemistry": "Li-Ion",
+    "cells": 1,
+    "notes": "Change these values to match your battery"
+  },
+  "hardware": {
+    "relay_board_type": "8-relay",
+    "relay1_function": "Charge Enable",
+    "relay1_ohms": 0.0,
+    "relay2_function": "Heavy Load",
+    "relay2_ohms": 6.0,
+    "relay3_function": "Medium Load",
+    "relay3_ohms": 20.0,
+    "relay4_function": "Light Load",
+    "relay4_ohms": 75.0,
+    "relay5_function": "Unused",
+    "relay5_ohms": 0.0,
+    "relay6_function": "Unused",
+    "relay6_ohms": 0.0,
+    "relay7_function": "Unused 7",
+    "relay7_ohms": 0.0,
+    "relay8_function": "Unused",
+    "relay8_ohms": 0.0
+  },
+  "chemistry_presets": {
+    "LiPo": {
+      "charge_complete_voltage_per_cell": 4.16,
+      "discharge_complete_voltage_per_cell": 2.9,
+      "discharge_to_storage_voltage_per_cell": 3.8,
+      "voltage_absolute_min_per_cell": 2.5,
+      "voltage_absolute_max_per_cell": 4.3
+    },
+    "Li-Ion": {
+      "charge_complete_voltage_per_cell": 4.16,
+      "discharge_complete_voltage_per_cell": 2.9,
+      "discharge_to_storage_voltage_per_cell": 3.7,
+      "voltage_absolute_min_per_cell": 2.5,
+      "voltage_absolute_max_per_cell": 4.3
+    },
+    "LFP": {
+      "charge_complete_voltage_per_cell": 3.6,
+      "discharge_complete_voltage_per_cell": 2.5,
+      "discharge_to_storage_voltage_per_cell": 3.3,
+      "voltage_absolute_min_per_cell": 2.0,
+      "voltage_absolute_max_per_cell": 3.8
+    }
+  },
+  "thresholds": {
+    "charge_complete_voltage": 4.16,
+    "charge_complete_current_ma": 20,
+    "charge_soak_time_sec": 360,
+    "discharge_complete_voltage": 2.9,
+    "discharge_soak_time_sec": 180,
+    "discharge_to_storage_voltage": 3.7,
+    "discharge_stage1_voltage": 3.0,
+    "discharge_stage2_voltage": 3.0,
+    "discharge_stage3_voltage": 3.0
+  },
+  "safety": {
+    "voltage_absolute_min": 2.5,
+    "voltage_absolute_max": 4.3,
+    "max_discharge_current_a": 2.0,
+    "timeout_per_cycle_sec": 28800,
+    "emergency_stop_enabled": true
+  },
+  "timing": {
+    "status_update_interval_sec": 50,
+    "fast_update_interval_sec": 1,
+    "hourly_snapshot_interval_sec": 3600
+  },
+  "serial": {
+    "stm32_device_name": "STMicroelectronics STLink Virtual COM Port",
+    "stm32_baudrate": 115200,
+    "stm32_timeout": 2
+  }
+}
