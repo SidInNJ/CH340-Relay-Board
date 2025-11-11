@@ -5,7 +5,7 @@ Verifies relay operations and helps debug communication
 
 import time
 import sys
-from relay_driver import RelayDriver, list_available_ports
+from .relay_driver import RelayDriver, list_available_ports
 
 
 def print_header(text: str):

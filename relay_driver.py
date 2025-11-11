@@ -163,7 +163,12 @@ class RelayDriver:
         Returns:
             Status response bytes, or None if no response
         """
-        if self.serial_conn and self.serial_conn.is_open:
+
+        # Was:         
+        # if self.serial_conn and self.serial_conn.is_open:
+        #   raise ConnectionError("Not connected to relay board")
+
+        if not self.serial_conn or not self.serial_conn.is_open:
             raise ConnectionError("Not connected to relay board")
         
         # Clear input buffer
