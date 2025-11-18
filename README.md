@@ -1,6 +1,8 @@
 # CH340 USB Relay Board Library
 
-A Python library for controlling CH340-based USB relay boards with 4 or 8 relays.
+A Python library for controlling CH340-based USB relay boards with 4 or 8 relays, 
+specificly the LCUS-4 and LCUS-8 boards sold by Jessinie on Amazon at:
+https://www.amazon.com/dp/B0F1BS4BHV?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1
 
 ## Features
 
